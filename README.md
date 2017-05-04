@@ -1,9 +1,7 @@
 
-# help-to-save-apis
+# Help To Save API's
 
-[![Build Status](https://travis-ci.org/hmrc/help-to-save-apis.svg?branch=master)](https://travis-ci.org/hmrc/help-to-save-apis) [ ![Download](https://api.bintray.com/packages/hmrc/releases/help-to-save-apis/images/download.svg) ](https://bintray.com/hmrc/releases/help-to-save-apis/_latestVersion)
-
-This is a placeholder README.md for a new repository
+Contains JSON schemas for the Help To Save service.
 
 ### License
 
