@@ -39,12 +39,22 @@
 		    "minimum": 2,
 		    "maximum": 6
 		},
+		"postCode" : {
+		    "type": "string",
+		    "minimum": 1,
+		    "maximum": 10
+		},
+		"countryCode" : {
+		    "type": "string",
+		    "minimum": 2,
+		    "maximum": 2
+		},		
 		"communicationPreference": {
 		    "type": "string",
 		    "enum": ["00", "02"]
 		}
 	    },	    
-	    "required": ["address","communicationPreference"],
+	    "required": ["communicationPreference"],
 	    "additionalProperties": false
 	},
 	"registrationChannel": {

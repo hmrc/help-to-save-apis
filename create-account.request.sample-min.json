@@ -4,10 +4,6 @@
     "surname": "Brown",
     "dateOfBirth": "1992-04-23",
     "contactDetails": {
-	"phoneNumber": "01234 567890",
-	"address": ["86 Ashopton Road","Blackpool"],
-	"postCode": "FY43 1FB",
-	"countryCode": "GB",
 	"communicationPreference": "02"
     },
     "registrationChannel": "callCentre"
