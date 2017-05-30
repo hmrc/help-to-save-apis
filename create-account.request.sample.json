@@ -6,7 +6,7 @@
     "contactDetails": {
 	"phoneNumber": "01234 567890",
 	"address": ["86 Ashopton Road","Blackpool","FY43 1FB"],
-	"digitallyExcluded": true
+	"communicationPreference": "02"
     },
     "registrationChannel": "callCentre"
 }

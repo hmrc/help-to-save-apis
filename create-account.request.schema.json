@@ -39,11 +39,12 @@
 		    "minimum": 2,
 		    "maximum": 6
 		},
-		"digitallyExcluded": {
-		    "type": "boolean"
+		"communicationPreference": {
+		    "type": "string",
+		    "enum": ["00", "02"]
 		}
 	    },	    
-	    "required": ["address","digitallyExcluded"],
+	    "required": ["address","communicationPreference"],
 	    "additionalProperties": false
 	},
 	"registrationChannel": {
