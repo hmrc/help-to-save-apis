@@ -8,7 +8,7 @@
 	"address": ["86 Ashopton Road","Blackpool"],
 	"postCode": "FY43 1FB",
 	"countryCode": "GB",
-	"communicationPreference": "02"
+	"communicationPreference": "00"
     },
     "registrationChannel": "callCentre"
 }

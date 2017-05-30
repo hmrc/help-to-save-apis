@@ -4,7 +4,8 @@
     "surname": "Brown",
     "dateOfBirth": "1992-04-23",
     "contactDetails": {
+	"email": "alex.brown@bogusmail.co.uk",
 	"communicationPreference": "02"
     },
-    "registrationChannel": "callCentre"
+    "registrationChannel": "online"
 }
