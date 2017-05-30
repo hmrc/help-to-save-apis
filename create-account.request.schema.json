@@ -34,7 +34,7 @@
 		    "type": "array",
 		    "items": {
 			"type": "string",
-			"maxLength" : 38
+			"maxLength" : 35
 		    },
 		    "minimum": 2,
 		    "maximum": 6
