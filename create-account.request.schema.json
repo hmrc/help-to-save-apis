@@ -1,67 +1,95 @@
 {
-    "type": "object",
-    "properties" : { 
-	"nino": {
-	    "type": "string",
-	    "pattern": "^(([A-CEGHJ-PR-TW-Z][A-CEGHJ-NPR-TW-Z]) ?([0-9]{2}) ?([0-9]{2}) ?([0-9]{2}) ?([A-D]{1})|((XX) ?(99) ?(99) ?(99) ?(X)))$"
-	},
-	"forename": {
-	    "type": "string",
-	    "minLength" : 1,
-	    "maxLength" : 99
-	},
-	"surname": {
-	    "type": "string",
-	    "minLength" : 1,
-	    "maxLength" : 300
-	},	
-	"dateOfBirth": {
-	    "type": "string",
-	    "pattern": "^[0-9]{4}[0-9]{2}[0-9]{2}$" 
-	},
-	"contactDetails": {
-	    "type": "object",
-	    "properties": {
-		"email": {
-		    "type": "string",
-		    "maxLength": 252,
-		    "pattern" : "^.{1,64}@.{1,254}$"
-		},
-		"phoneNumber": {
-		    "type": "string"
-		},
-		"address": {
-		    "type": "array",
-		    "items": {
-			"type": "string",
-			"maxLength" : 35
-		    },
-		    "minimum": 1,
-		    "maximum": 5
-		},
-		"postCode" : {
-		    "type": "string",
-		    "minimum": 1,
-		    "maximum": 10
-		},
-		"countryCode" : {
-		    "type": "string",
-		    "minimum": 2,
-		    "maximum": 2
-		},		
-		"communicationPreference": {
-		    "type": "string",
-		    "enum": ["00", "02"]
-		}
-	    },	    
-	    "required": ["communicationPreference"],
-	    "additionalProperties": false
-	},
-	"registrationChannel": {
-	    "type": "string",
-	    "enum": ["online", "callCentre"]
-	}
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "A JSON schema to validate JSON as described in PPM-30048-UEM009-ICD001-HTS-HMRC-Interfaces v1.2.docx",
+  "id": "//https://github.com/hmrc/help-to-save-apis/schema.json",
+  
+  "type" : "object",
+  "additionalProperties": false,
+  "required": ["forename", "surname", "dateOfBirth", "contactDetails", "registrationChannel", "nino"],
+  "properties" : {
+    "forename" : {
+      "type" : "string",
+      "minLength": 1,
+      "maxLength": 26,
+      "pattern": "^[a-zA-Z\\.\\&\\-]+$"
     },
-    "required": ["nino","forename","surname","dateOfBirth","contactDetails", "registrationChannel"],
-    "additionalProperties": false
+    "surname": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 300,
+      "pattern": "^['a-zA-Z\\.\\&\\-]+$"
+    },
+    "dateOfBirth": {
+      "type": "string",
+      "minLength": 8,
+      "maxLength": 8,
+      "pattern": "^[0-9]{4}[0-9]{2}[0-9]{2}$"
+    },
+    "contactDetails": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["address1", "address2", "postcode", "communicationPreference"],
+      "properties": {
+        "countryCode": {
+          "type": "string",
+          "minLength": 2,
+          "maxLength": 2,
+          "pattern": "[A-Z][A-Z]",
+          "type": "string",
+          "maxLength": 35
+        },
+        "address1": {
+          "type": "string",
+          "maxLength": 35
+        },
+        "address2": {
+          "type": "string",
+          "maxLength": 35
+        },
+        "address3": {
+          "type": "string",
+          "maxLength": 35
+        },
+        "address4": {
+          "type": "string",
+          "maxLength": 35
+        },
+        "address5": {
+          "type": "string",
+          "maxLength": 35
+        },
+        "postcode": {
+          "type": "string",
+          "maxLength": 10
+        },
+        "communicationPreference": {
+          "type": "string",
+          "minLength": 2,
+          "maxLength": 2,
+          "pattern": "00|02"
+        },
+        "phoneNumber": {
+          "type": "string",
+          "maxLength": 15
+        },
+        "email": {
+          "type": "string",
+          "maxLength": 254,
+          "pattern": "^.{1,64}@.{1,252}$"
+        }
+      }
+    },
+    "registrationChannel": {
+      "type": "string",
+      "maxLength": 10,
+      "pattern": "^online$|^callCentre$"
+    },
+    "nino" : {
+      "type" : "string",
+      "minLength": 9,
+      "maxLength": 9,
+      "pattern": "^(([A-CEGHJ-PR-TW-Z][A-CEGHJ-NPR-TW-Z])([0-9]{2})([0-9]{2})([0-9]{2})([A-D]{1})|((XX)(99)(99)(99)(X)))$"
+    }
+  }
 }
+  
