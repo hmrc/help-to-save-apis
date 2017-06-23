@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
   "description": "A JSON schema to validate JSON as described in PPM-30048-UEM009-ICD001-HTS-HMRC-Interfaces v1.2.docx",
-  "id": "//https://github.com/hmrc/help-to-save-apis/schema.json",
+  "id": "https://github.com/hmrc/help-to-save-apis/blob/master/create-account.request.schema.json",
   
   "type" : "object",
   "additionalProperties": false,
@@ -34,9 +34,7 @@
           "type": "string",
           "minLength": 2,
           "maxLength": 2,
-          "pattern": "[A-Z][A-Z]",
-          "type": "string",
-          "maxLength": 35
+          "pattern": "[A-Z][A-Z]"
         },
         "address1": {
           "type": "string",
