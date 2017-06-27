@@ -11,13 +11,13 @@
       "type" : "string",
       "minLength": 1,
       "maxLength": 26,
-      "pattern": "^[a-zA-Z\\.\\&\\-]+$"
+      "pattern": "^[,a-zA-Z\\.\\&\\-]+$"
     },
     "surname": {
       "type": "string",
       "minLength": 1,
       "maxLength": 300,
-      "pattern": "^['a-zA-Z\\.\\&\\-]+$"
+      "pattern": "^[,'a-zA-Z\\.\\&\\-]+$"
     },
     "dateOfBirth": {
       "type": "string",
