@@ -1,7 +1,6 @@
 {
   "$schema": "http://json-schema.org/schema#",
   "description": "A JSON schema to validate JSON as described in PPM-30048-UEM009-ICD001-HTS-HMRC-Interfaces v1.2.docx",
-  "$id": "https://github.com/hmrc/help-to-save-apis/blob/master/create-account.request.schema.json",
   
   "type" : "object",
   "additionalProperties": false,
