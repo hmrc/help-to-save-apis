@@ -22,7 +22,7 @@ from jsonschema import validate
 
 with open('create-account.request.schema.json') as schema_file:
   schema = json.loads(schema_file.read())
-  print("Testing use of ICD001 v 1.2 draft schema for data validation.")
+  print("Testing use of ICD001 v2.0 schema for data validation.")
 
   # The data to be validated:
   with open(sys.argv[1]) as data_file:
