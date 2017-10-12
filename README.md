@@ -5,9 +5,9 @@ Contains JSON schemas for the Help To Save service along with samples and a pyth
 
 ## Version Map
 
-Github version on left, ICD version on the right
-
-/1.0 ICD 1.6 ... 2.0+ until next version map number appears below
+| Github version | ICD version |
+|:----------------:|-------------|
+|1.0|ICD 1.6 ... 2.0+ until next version map number appears below|
 
 ## Validate
 
