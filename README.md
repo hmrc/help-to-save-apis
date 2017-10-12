@@ -1,7 +1,13 @@
 
 # Help To Save API's
 
-Contains JSON schemas for the Help To Save service  along with samples and a python script that allows easy exploration.
+Contains JSON schemas for the Help To Save service along with samples and a python script that allows easy exploration.
+
+## Version Map
+
+| Github version | ICD version |
+|:----------------:|-------------|
+|1.0|1.6 ... 2.0+ until next version map number appears below|
 
 ## Validate
 

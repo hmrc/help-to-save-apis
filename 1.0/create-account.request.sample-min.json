@@ -2,13 +2,13 @@
     "nino": "AB123456A",
     "forename": "Alex",
     "surname": "O`Brown",
-    "dateOfBirth": "18oo0516",
+    "dateOfBirth": "19920423",
     "contactDetails": {
         "email": "alex.brown@bogusmail.co.uk",
-        "communicationPreference": "02",
         "address1": "86 Ashopton Road",
         "address2": "Blackpool", 
-        "postcode": "FY43 1FB"
+        "postcode": "FY43 1FB",
+        "communicationPreference": "02"
     },
     "registrationChannel": "online"
 }
